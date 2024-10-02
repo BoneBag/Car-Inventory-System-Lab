@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <h1>Add a Car</h1>
+    <form id="carForm">
+        <label for="carName">Enter car name</label>
+        <input type="text" id="carName" name="carName">
+
+        <label for="carModel">Enter car model</label>
+        <input type="text" id="carModel" name="carModel">
+
+        <label for="carYear">Enter car year</label>
+        <input type="number" id="carYear" name="carYear">
+
+        <label for="carPrice">Enter car price</label>
+        <input type="number" id="carPrice" name="carPrice">
+
+        <button type="button" onclick="addCar()">Add Car</button>
+    </form>
+
+    <button type="button" onclick="showTotalPrice()">Show Total Price of Cars</button>
+
+    <p id="totalPrice"></p>
+
+    <h1>Current Cars:</h1>
+    <p id="carList"></p>
+
+</body>
+</html>
